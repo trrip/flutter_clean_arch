@@ -1,0 +1,3960 @@
+body{
+background-color:#ffffff;
+}
+
+table.table
+						{
+						width:100%;
+						table-layout:fixed;
+						border-top:1px solid #000000;
+						border-collapse:collapse;
+						margin:0px 0px 3px 1px;
+						font-size:16px;
+						line-height:18px;
+						}
+table.table1
+						{
+						width:100%;
+						table-layout:fixed;
+						border-top:0px solid #000000;
+						border-top:0px solid #000000;
+						border-collapse:collapse;
+						margin:0px 0px 3px 1px;
+						font-size:16px;
+						line-height:18px;
+						}
+td.no_border{
+border-left: 0px solid black;
+ border-right: 0px solid black;
+ border-top: 0px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+tr.no_border{
+border-left: 0px solid black;
+ border-right: 0px solid black;
+ border-top: 0px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}							
+td.col-green    
+						{
+						background-color:#00BB00;
+						text-align:center;
+						padding:5px 2px 5px 2px;
+						}
+p.center
+{
+vertical-align:middle;
+}
+
+td.border_top_And_left
+{
+ border-left: 1px solid black;
+ border-right: 0px solid black;
+ border-top: 1px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+td.border_top_And_right
+{
+ border-left: 0px solid black;
+ border-right: 1px solid black;
+ border-top: 1px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+td.border_right
+{
+ border-left: 0px solid black;
+ border-right: 1px solid black;
+ border-top: 0px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+td.border_left
+{
+ border-left: 1px solid black;
+ border-right: 0px solid black;
+ border-top: 0px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+td.border_top
+{
+ border-left: 0px solid black;
+ border-right: 0px solid black;
+ border-top: 1px solid black;
+ border-bottom: 0px solid black;
+ padding-left:5px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+tr
+{
+height:30px;
+}
+
+td.border_bottom_And_right
+{
+ border-left: 1px solid black;
+ border-right: 1px solid black;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ padding-left:5px;
+ padding-right:5px;
+}
+
+input.Text_box{
+
+    -webkit-appearance: initial;
+	-webkit-user-select: none;
+	text-align:center;
+	font-size:17px;
+	color:white;
+    appearance: initial;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: gray;
+    position: relative;
+	-webkit-border-radius: 3px;
+}
+input{
+
+border:1px solid;
+height:25px;
+
+}
+input.Result{
+
+    -webkit-appearance: initial;
+	-webkit-user-select: none;
+	font-size:18px;
+	text-align:center;
+	color:black;
+    appearance: initial;
+    background: white;
+    width: 50px;
+    height: 25px;
+    border: 1px solid black;
+    background: white;
+    position: relative;
+	-webkit-border-radius: 0px;
+}
+
+input.normal_Text_box{
+
+    -webkit-appearance: initial;
+	text-align:center;
+    margin-right:10px;
+	color:black;
+	font-size:14px;
+    appearance: initial;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background: white;
+    position: relative;
+	-webkit-border-radius: 0px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: gray;
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: gray;
+    position: relative;
+	-webkit-border-radius: 3px;
+}
+
+
+input[type="checkbox"]:checked {
+    background: blue;
+}
+input[type="checkbox"]:checked:after {
+    
+    content: "\2713";
+    color: #fff;
+	vertical-align:middle;
+	margin-left:3px;
+	margin-bottom:4px;
+   /* position: absolute;*/
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+body
+{
+font-family:Helvetica, Arial, sans-serif;
+-webkit-user-select: none;
+}
+.footer-button-table
+{
+width:100%;
+
+}
+
+.footer-div {
+    padding-top: 100px;
+}
+
+.footer-table {
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.footer-button {
+    background-color: #4c4c4c;
+    text-align: center;
+    height: 40px;
+    border: 1px solid white;
+    font-size: 13px;
+}
+
+.footer-button-click {
+    width: 100%;
+    color: white;
+    height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 13px;
+}
+
+.footer-button:active {
+    background-color: #808080;
+    text-align: center;
+    height: 40px;
+    border: 1px solid white;
+    font-size: 13px;
+}
+.pdf-image {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+div.static-reference-box {
+    margin-top: 10px;
+    width: 95%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+    background-color: #d0d0d0;
+    font-size: 16px;
+    color: #303030;
+    font-style: italic;
+    float: left;
+    padding: 10px;
+}
+
+.flip-pdf-button {
+    width: 50px;
+    height: 45px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background: #d0d0d0;
+    border: solid 1px #c0c0c0;
+    vertical-align: baseline;
+    margin: auto;
+    float: right;
+}
+.mfooter-button {
+    width: 100%;
+    color: white;
+    height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #4c4c4c;
+    border: none;
+    font-size: 13px;
+}
+
+.mfooter-button:active {
+    width: 100%;
+    color: white;
+    height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #808080;
+    border: none;
+    font-size: 13px;
+}
+
+.more-info-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*
+
+.footer-table {
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.footer-button {
+    background-color: #606060;
+    text-align: center;
+	height:40px;
+    padding: 7px 0px 7px 0px;
+    border: 1px solid white;
+}
+
+.footer-button-click {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    letter-spacing: 0.75px;
+}
+
+.footer-button:active {
+    background-color: #808080;
+    text-align: center;
+    padding: 7px 0px 7px 0px;
+    border: 1px solid white;
+}
+
+.mfooter-button {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+	height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #606060;
+    border: none;
+    letter-spacing: 0.75px;
+}
+
+.mfooter-button:active {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #808080;
+    border: none;
+}   
+*/
+    .unit_label_input
+			{
+			    font-weight:normal;
+                color:4D4D4D;
+				padding-right:0px;
+				text-align:left;
+				padding-left:8px;
+			}
+			.unit_label_output
+			{
+			    font-weight:bold;
+                color:4D4D4D;
+				padding-right:0px;
+				text-align:left;
+				padding-left:8px;
+			}
+
+.reference-box {
+	margin-top: 10px;
+	width: 95%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: left;
+	background-color: #d0d0d0;
+	font-size: 16px;
+	color: #303030;
+	font-style: italic;
+	float: left;
+	padding: 10px;
+	display: none;
+}
+
+
+
+
+
+
+
+/*-----------------------23 June 2015------------------------*/
+
+
+
+
+
+
+
+body 					
+
+
+
+						{
+
+
+
+						-webkit-user-select:block;
+
+
+
+						-webkit-hyphens:auto;			
+
+
+
+						-moz-hyphens:auto;
+
+
+
+						hyphens:auto;
+
+
+
+						margin: 2px 0px 0px 0px;
+
+
+
+						padding: 5px 3px 5px 3px;
+
+
+
+						font-family:Arial;
+
+
+
+						color:#000000;
+
+
+
+						font-size:17px;
+
+
+
+						word-spacing:1px;
+
+
+
+						line-height:19px;
+
+
+
+						text-align:left;
+
+
+
+						/*background:#F0FFFF;*/
+
+
+
+						}
+
+
+
+					
+
+
+
+						
+
+
+
+/*-----------------------Splitt Mark within Content------------------------*/
+
+
+
+
+
+
+
+p.html-page-end-here 
+
+
+
+						{
+
+
+
+						color:#FF0000;
+
+
+
+						font-size: 16px;
+
+
+
+						font-weight: bold;
+
+
+
+						}
+
+
+
+						
+
+
+
+
+
+
+
+/*--------------------------Distances------------------------*/
+
+
+
+
+
+
+
+p.text + table.table 
+
+
+
+						{
+
+
+
+						margin-top:6px;
+
+
+
+						}
+
+
+
+
+
+
+
+p
+
+
+
+						{
+
+
+
+						margin:2px;
+
+
+
+						}
+
+
+
+
+
+
+
+p.text
+
+
+
+						{
+
+
+
+						margin-bottom: 5px;
+
+
+
+						}
+
+
+
+p.text-right
+
+
+
+						{
+
+
+
+						margin-bottom: 5px;
+						text-align:right;
+
+
+
+						}
+
+
+
+				
+
+
+
+/*-----------------------Headline Definition - 4 Level (Note: Display: none! Exception Level 4 clarify behavior with Editor)------------------------*/
+
+
+
+					
+
+
+
+						
+
+
+
+p.h1:first-child		{     
+
+
+
+						margin-top:0px;
+
+
+
+						}
+
+
+
+
+
+
+
+p.h1     
+
+
+
+						{     
+
+
+
+						color:#0000FF;
+
+
+
+						font-size: 19px;
+
+
+
+						line-height: 1.4em;
+
+
+
+						font-weight: bold;
+
+
+
+						margin: 10px 0px 5px 2px;
+
+
+
+						display:block;
+
+
+
+						}
+
+
+
+						
+
+
+
+						
+
+
+
+p.h2     
+
+
+
+						{     
+
+
+
+						color:#0099CC;
+
+
+
+						font-size: 18px;
+
+
+
+						line-height:18px;
+
+
+
+						font-weight: bold;
+
+
+
+						margin: 5px 0px 5px 2px;
+
+
+
+						display:block;
+
+
+
+						}						
+
+
+
+												
+
+
+
+p.h3     
+
+
+
+						{     
+
+
+
+						color:#FF8000;
+
+
+
+						font-size: 17px;
+
+
+
+						line-height: 13px;
+
+
+
+						font-weight: bold;
+
+
+
+						margin: 5px 0px 5px 2px;
+
+
+
+						display:block;
+
+
+
+						}
+
+p.h4   
+	{     
+
+
+
+						color:#585858;
+
+
+
+						font-size: 16px;
+
+
+
+						line-height: 1.3em;
+
+
+
+						font-weight: bold;
+
+
+
+						margin: 12px 0px 5px 2px;
+
+
+
+						display:block;
+
+
+
+						}
+
+
+
+
+
+
+
+				
+
+
+
+/*-----------------------Enumeration with Bullet Points - First Level------------------------*/
+
+
+
+
+
+
+
+p.listlevel1:before
+
+
+
+						{ 
+
+
+
+						content: "\2022";   
+
+
+
+						margin-right:0.5em;
+
+
+
+						color:#000000;  
+
+
+
+						}
+
+
+
+p.listlevel1
+
+
+
+						{ 
+
+
+
+						margin: 0px;     
+
+
+
+						text-indent:-0.9em;             
+
+
+
+						margin-left:1.15em;
+
+
+
+						
+
+
+
+						}
+
+
+
+
+
+
+
+/*-----------------------Enumeration with Hyphen - Second Level------------------------*/						
+
+
+
+
+
+
+
+p.listlevel2:before  
+
+
+
+						{
+
+
+
+						content: "\2212";  
+
+
+
+						margin-right:0.4em;
+
+
+
+						}
+
+
+
+
+
+
+
+p.listlevel2         
+
+
+
+						{
+
+
+
+						margin: 0px;					
+
+
+
+				     	text-indent:-0.9em;             
+
+
+
+				       	margin-left:2em;
+
+
+
+						line-height:1.3em;
+
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------Enumeration with hollow bullet point - Third Level------------------------*/
+
+
+
+
+p.listlevel3:before {
+    content: "\25E6";
+    margin-right: 0.4em;
+}
+p.listlevel3 {
+    margin: 0px;
+    text-indent: -0.9em;
+    margin-left: 2.8em;
+    line-height: 1.3em;
+}
+
+
+/*-----------------------Enumeration with Hyphen - Fourth Level------------------------*/
+
+p.listlevel4:before {
+    content: "\2212";
+    margin-right: 0.4em;
+}
+p.listlevel4 {
+    margin: 0px;
+    text-indent: -1.0em;
+    margin-left: 3.6em;
+    line-height: 1.3em;
+}
+
+
+
+/*-----------------------Enumeration with Arrows - First Level------------------------*/
+
+
+
+
+
+p.listarrow1:before
+
+
+
+						{
+
+
+
+           				content: "\2192";                                 
+
+
+
+						margin-right:0.2em;                                       
+
+
+
+						}
+
+
+
+                                                               
+
+
+
+p.listarrow1      
+
+
+
+
+
+
+
+						{
+
+
+
+						margin: 0px;                                                
+
+
+
+						text-indent:-1.22em;             
+
+
+
+						margin-left:1.1em;
+
+
+
+						margin-bottom:0.20em;
+
+
+
+						margin-top:0.10em;
+
+
+
+                                                                         
+
+
+
+						}	
+
+
+
+
+
+
+
+/*-----------------------Numbered List, first and second Level Note: also latin, small/big letters ------------------------*/
+
+
+
+
+
+
+
+ol						{ 
+
+
+
+						margin: 5px 0px 5px 0px;
+
+
+
+						} 
+
+
+
+
+
+
+
+						
+
+
+
+li.enum1				
+
+
+
+						{
+
+
+
+						margin: 0px 2px 0px 3px;
+
+
+
+						text-align:left;
+
+
+
+						line-height:1.2em;
+
+
+
+						font-weight:bold;
+
+
+
+						color:#0066b2;
+
+
+
+						}
+
+
+
+						
+
+
+
+ol li span 				{ 
+
+
+
+						font-weight:normal; 
+
+
+
+						color:#000;
+
+
+
+						} 
+
+
+
+
+
+
+
+/*ol.enum2
+
+
+
+						{
+
+
+
+						margin: 5px 0px 5px 0px;
+
+
+
+						padding-left:3.2em;
+
+
+
+						list-style:lower-latin;
+
+
+
+						list-style-position:outside;
+
+
+
+						}*/						
+
+
+
+li.enum2				
+
+
+
+						{
+
+
+
+						margin: 0px 2px 0px 2px;
+
+
+
+						text-align:left;
+
+
+
+						line-height:1.2em;
+
+
+
+						}
+
+
+
+						
+
+
+
+/*-----------------------Standard Source Code with div box------------------------*/
+
+
+
+
+
+
+
+p.reference      
+
+
+
+						{
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						margin-bottom:5px;
+
+
+
+						}
+
+
+
+
+
+
+
+					
+
+
+
+div.ref     
+
+
+
+						{
+
+
+
+						background: #E6E8FA;  /*or #f5f5f5 very light bg*/
+
+
+
+						border: 1px solid #FFF;
+
+
+
+						padding: 5px 2px 2px 2px;
+
+
+
+						margin: 7px 1px 13px 5px;
+
+
+
+						border-radius: 5px;
+
+
+
+						-moz-border-radius: 5px;
+
+
+
+						-webkit-border-radius: 5px;
+
+
+
+						box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+
+
+
+						}
+
+
+
+	
+
+
+
+/*-----------------------Standard footnote with div container------------------------*/
+
+
+
+
+
+
+
+p.footnote      
+
+
+
+						{
+
+
+
+						font-size:16px;
+
+
+
+						font-style:italic;
+
+
+
+						line-height:18px;
+
+
+
+						 margin-bottom:5px;
+
+
+
+						}
+
+
+
+						
+
+
+
+div.footn     
+
+
+
+						{
+
+
+
+						background: #D9D9F3;  /*or #f5f5f5 very light bg*/
+
+
+
+						border: 1px solid #D9D9F3;
+
+
+
+						padding: 2px 2px 0px 2px;
+
+
+
+						margin: 7px 1px 10px 5px;
+
+
+
+						border-radius: 5px;
+
+
+
+						-moz-border-radius: 1px;
+
+
+
+						-webkit-border-radius: 1px;
+
+
+
+						box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+
+
+
+						}
+
+
+
+											
+
+
+
+/*-----------------------Standard Image Declaration with div container------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+.img-anchor
+
+
+
+						{
+
+
+
+						font-color: red;
+
+
+
+						font-weight: bold;
+
+
+
+						}
+
+
+
+						
+
+
+
+
+
+
+
+div.legend				{
+
+
+
+						width:100%;
+
+
+
+						margin-top: 7px;
+
+
+
+						margin-bottom: 7px;
+
+
+
+						margin-left: 1px; 
+
+
+
+						padding: -1px;
+
+
+
+						border:0px solid #a6003a;
+
+
+
+						color:#58585a; /* gray 80% */
+
+
+
+						}
+
+
+
+						
+
+
+
+p.fig-caption 			{
+
+
+
+						font-weight: bolder;
+
+
+
+						color:#3E3D40;
+
+
+
+						text-align:left;
+
+
+
+						margin-top:12px;
+
+
+
+						}
+
+
+
+
+
+
+
+@media screen and (max-height: 568px){
+
+
+
+						
+
+
+
+						 Div.imge img
+
+
+
+						 {
+
+
+
+							max-width:310px;
+
+
+
+						 }
+
+
+
+						}
+
+
+
+	
+
+
+
+@media screen and (max-height: 310px){
+
+
+
+						
+
+
+
+						 Div.img img
+
+
+
+						 {
+
+
+
+							max-width:555px;
+
+
+
+						 }
+
+
+
+						}
+
+
+
+	
+
+
+
+
+
+
+
+@media screen and (max-width: 448px){
+
+
+
+						
+
+
+
+						 Div.img img
+
+
+
+						 {
+
+
+
+							max-width:437px;
+
+
+
+						 }
+
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px){
+
+
+
+						
+
+
+
+						 Div.img img
+
+
+
+						 {
+
+
+
+							max-width:310px;
+
+
+
+						 }
+
+
+
+						}
+
+
+
+
+
+
+
+						
+
+
+
+/*--------------------------Standard Table Declaration------------------------*/
+
+
+
+
+
+
+
+table.table + table.table	
+
+
+
+						{
+
+
+
+						margin-top:15px;
+
+
+
+						}	
+
+
+
+
+
+
+
+table.table + p.text 
+
+
+
+						{
+
+
+
+						margin-top:14px;
+
+
+
+						}
+
+
+
+																 							
+
+
+/*------------------------------Caption----------------------------*/	
+
+
+
+
+
+
+
+caption					{
+
+
+
+						margin:0px 2px 3px 2px;
+
+
+
+						text-align:left;
+
+
+
+						}	
+
+
+
+						
+
+
+
+
+
+
+
+/*-----------Standard Table head declaration, first, second Level and third Level----------*/
+
+
+
+			
+
+
+
+th.table-header1 {
+    background-color: #808080;
+    padding: 5px 0px 5px 0px;
+    border-color: #000000;
+}
+
+						
+
+
+/*----------------------------------- Shrinath Added New Tags --------------------------------------------------------*/						
+
+
+
+th.table-header2   
+
+
+
+						{
+
+
+
+						background-color: #cccccc; 			
+
+
+
+						padding:5px 0px 5px 0px;
+
+
+
+						}
+
+
+
+	
+
+
+td.table-header3   
+
+
+
+						{
+
+
+
+						background-color: #e6e6e6; 
+						padding:5px 0px 5px 0px;
+
+
+						
+
+
+
+						}	
+th.table-header3   
+
+
+
+						{
+
+
+
+						background-color: #e6e6e6; 
+						padding:5px 0px 5px 0px;
+
+
+						
+
+
+
+						}	
+
+
+th.table-header4   
+
+
+
+						{
+
+
+
+						background-color:#A9BBE0; 
+
+
+						padding:5px 0px 5px 0px;
+
+
+
+						}	
+		
+
+/*----------Standard Table Header Text declaration---------------*/	
+
+
+
+					
+
+
+p.table-title1 {
+    margin-left: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+    text-align: left;
+}
+
+
+
+p.table-title2    
+
+
+
+						{
+
+
+
+						margin-left:5px;
+
+
+
+						color:#000000;
+
+
+
+						font-weight:bold;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						word-spacing:1px;
+
+
+
+						text-align:left;
+
+
+
+						}
+
+
+p.table-title3    
+
+
+
+						{
+
+
+
+						margin-left:5px;
+
+
+
+						color:#000000;
+
+
+
+						font-weight:bold;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						letter-spacing:0.7px;
+
+
+
+						text-align:left;
+
+
+
+						}
+
+
+
+
+
+
+
+p.table-title4    
+
+
+
+						{
+
+
+
+						margin-left:5px;
+
+
+
+						color:#000000;
+
+
+
+						font-weight:bold;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						word-spacing:1px;
+
+
+
+						text-align:left;
+
+
+
+						}
+
+
+
+
+
+/*----------------------------Shrinath Tags Ends Here------------------------------------*/							
+
+
+
+/*---------------Border behavior of table header---------------*/							
+
+
+
+						
+
+
+
+
+
+
+
+th.table-header1:first-child			
+
+
+
+						{
+
+
+
+						border-bottom:1px solid #000000;
+
+
+
+						}
+
+
+
+					
+
+
+
+
+
+
+
+th.table-header1 + th.table-header1					
+
+
+
+						{
+
+
+
+						border-left: 1px solid #000000;
+
+
+
+						}
+
+
+
+
+
+
+
+th.table-header2 + th.table-header2					
+
+
+
+						{
+
+
+
+						border-left: 1px solid #000000;
+
+
+
+						}
+
+
+
+
+
+th.table-header3 + th.table-header3					
+
+
+
+						{
+
+
+
+						border-left: 1px solid #000000;
+
+
+
+						}	
+
+
+th.table-header4 + th.table-header4					
+
+
+
+						{
+
+
+
+						border-left: 1px solid #000000;
+
+
+
+						}				
+
+
+
+						
+
+
+
+
+												
+
+
+
+/*---------Table columns and table rows border behavior----------*/		
+
+
+
+
+tr:first-child			
+
+
+
+						{
+
+
+
+						border-bottom:1px solid #000000;
+	
+
+
+						}
+
+
+
+					
+
+
+
+						
+
+
+
+tr				
+
+
+
+						{
+
+
+
+						border-bottom:1px solid #000000;
+						border-left:1px solid #000000;
+						border-right:1px solid #000000;
+
+
+						}		
+
+
+
+				
+
+
+
+				
+
+
+
+td 					
+
+
+
+						{
+
+
+
+						border-left:1px solid #000000;
+
+
+
+						}
+						
+#algoPdf {
+    width: 35px;
+    height: 35px;
+}
+
+th					
+
+
+
+						{
+
+
+					
+						border-left:1px solid #000000;
+						vertical-align: center; 
+
+						}
+
+					
+
+
+
+
+
+
+
+/*-------------------Standard Table Text----------------------*/						
+
+
+
+						
+
+
+
+p.table-text   
+
+
+
+						{
+
+
+
+						color: #3E3D40;
+
+
+
+						font-family:Arial;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						margin-left:3px;
+
+
+
+						text-align:left;
+
+
+
+						}
+
+
+
+
+/*----------Rotis-5 -----------*/
+
+.rotis_5{
+
+font-size:12px;
+
+
+}
+
+
+
+
+					
+
+
+
+/*------------------------------------Additional Table Declarations/Exceptions -----------------------------------*/
+
+
+
+
+
+
+
+/*---------Standard Table Header Text Centered----------*/
+
+
+
+
+
+
+
+p.table-title1-cent   
+
+
+
+						{
+
+
+
+						color: #FFFFFF;
+
+
+
+						font-weight:bold;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						word-spacing:1px;
+
+
+
+						letter-spacing:-0.5px;
+
+
+
+						margin: 3px 2px 0px 2px;
+
+
+
+						text-align:center;
+
+
+
+						}
+
+
+
+	
+
+
+
+						
+
+
+
+p.table-title2-cent		{
+
+
+
+						color: #3E3D40;
+
+
+
+						font-weight:bold;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						word-spacing:1px;
+
+
+
+						letter-spacing:-0.5px;
+
+
+
+						margin: 3px 2px 0px 2px;
+
+
+
+						text-align:center;
+
+
+
+						}
+
+
+
+						
+
+
+
+						
+
+
+
+/*-------------------Standard Table Text centered----------------------*/						
+
+
+
+						
+
+
+
+p.table-text-cent   
+
+
+
+						{
+
+
+
+						color: #3E3D40;
+
+
+
+						font-family:Arial;
+
+
+
+						font-size:16px;
+
+
+
+						line-height:18px;
+
+
+
+						margin-left:3px;
+
+
+
+						text-align:center;
+
+
+
+						}		
+
+
+
+										
+
+
+/*---------Table Cell Declaration color codes----------*/
+
+
+
+td.color-gray1 {
+    background-color: #A7A9AC;
+    /* red 27/50/40/0*/
+    color: #9A9A9A;
+    /* gray 87% */
+}
+
+td.color-gray2 {
+    background-color: #D3D4D6;
+    /* red 13/25/20/0*/
+    /* gray 87% */
+}
+.color-gray3
+
+
+
+						{
+
+
+
+						background-color:#D9D9D9; 
+
+
+
+						}	
+
+
+
+
+
+.color-gray4
+
+
+
+						{
+
+
+
+						background-color:#E6E6E6; 
+
+
+
+						}
+
+
+
+
+.color-gray5
+
+
+
+						{
+
+
+
+						background-color:#F2F2F2; 
+
+
+
+						}	
+
+
+
+.color-green1
+
+
+
+						{
+
+
+
+						background-color:#9CC48E; 
+
+
+
+						}	
+					
+/*-------------------*/
+
+
+td.color-yellow1 {
+    background-color: #FFF200;
+    color: #000000;
+    border-color: #005581;
+}
+.color-red1
+						{
+                    	background-color: #F79779;			/* red 13/25/20/0*/
+												/* gray 87% */
+						}
+
+
+
+
+
+.color-blue1
+
+
+
+						{
+
+
+
+						background-color:#6FD0F6; 
+
+
+
+						}	
+
+
+
+.color-blue2
+
+
+
+						{
+
+
+
+						background-color:#4C80C1; 
+
+
+
+						}	
+
+
+.color-blue3
+
+
+
+						{
+
+
+
+						background-color:#7C9BD0; 
+
+
+
+						}	
+
+			.color-blue4
+						{
+                    	background-color: #A9BBE0;				/* red 27/50/40/0*/
+						color: #9A9A9A;							/* gray 87% */
+	                    
+						}												
+
+
+
+/*---------Table Cell Declaration Background any color----------*/
+
+
+
+
+
+
+
+td.table-col-color     
+
+
+
+						{
+
+
+
+						background-color:#ffffff; 
+
+
+
+						color:#58585a;
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						}
+
+
+
+
+
+
+
+/*---------Border Right and Left are Hidden----------*/
+
+
+
+
+
+
+
+td.table-col-hidden     
+
+
+
+						{
+
+
+
+						background-color:#ffffff;
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						border-right:hidden;
+
+
+
+						border-left:hidden;
+
+
+
+						}
+
+
+
+						
+
+
+
+						
+
+
+
+/*---------Border bottom Hidden----------*/
+
+
+
+
+
+
+
+tr.bottom
+
+
+
+						{
+
+
+
+						border-bottom: 1px solid #0066b2;
+
+
+
+						}
+
+
+
+					
+
+
+
+td.table-col-bohidden     
+
+
+
+						{
+
+ 
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						border-bottom:hidden;
+
+
+
+						}						
+
+
+
+
+
+
+
+
+
+
+
+td.table-col-bohidwhi     
+
+
+
+						{
+
+
+
+						background-color:#ffffff; 
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						border-bottom:hidden;
+
+
+
+						}	
+
+
+
+											
+
+
+
+/*---------Column background gray text alignment left----------*/
+
+
+
+
+
+
+
+td.table-col-gray    
+
+
+
+						{
+
+
+
+						background-color:#E6E8FA;
+
+
+
+						text-align:left;
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						}				
+
+
+
+
+
+
+
+/*----------------------------Different Text Highlighting Character styles---------------------------*/		
+
+
+
+
+
+
+
+/*---------Bold Text black----------*/
+
+
+
+
+
+
+
+span.bold     
+
+
+
+						{
+
+
+
+						font-weight: bold;
+
+
+
+						color:#000000; 
+
+
+
+						}				
+
+
+
+
+
+
+
+/*---------Bold Text any color----------*/
+
+
+
+
+
+
+
+.bold-color    
+
+
+
+						{
+
+
+
+						font-weight: bold;
+
+
+
+						color:#1A60B3; 
+
+
+
+						}
+
+
+
+						
+
+
+
+/*---------Bold Text and Underlined----------*/
+
+
+
+
+
+
+
+.bold-underline     
+
+
+
+						{
+
+
+
+						font-weight: bold;
+
+
+
+						color:#f06e00;
+
+
+
+						text-decoration:underline; 
+
+
+
+						}
+
+
+
+						
+
+
+
+/*---------Italic Text--------------*/
+
+
+
+
+
+
+
+span.italic     
+
+
+
+						{
+
+
+
+						font-style:italic;
+
+
+
+						}
+
+
+
+
+
+
+/*---------Italic Text any color----------*/
+
+
+
+
+
+
+
+.italic-color    
+
+
+
+						{
+
+
+
+						font-style: italic;
+
+
+
+						color:#cccccc; 
+
+
+
+						}
+
+
+
+/*---------Italic Text and Underlined--------------*/
+
+
+
+
+
+
+
+.italic-underline      
+
+
+
+						{
+
+
+
+						text-decoration:underline; 
+
+
+
+						font-style:italic;
+
+
+
+						}
+
+
+
+						
+
+
+
+/*--------------Text Underlined--------------*/
+
+
+
+
+
+
+
+.underline    
+
+
+
+						{
+
+
+
+						text-decoration:underline; 
+
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------Horizont ruler--------------*/
+
+
+
+
+
+
+
+hr   
+
+
+
+						{
+
+
+
+						border:dotted #DCDCDC 0.8pt;
+
+
+
+						margin:5px 0px 5px 0px;
+
+
+
+						}
+
+
+
+												
+
+
+
+/*--------------Text font white--------------*/		
+
+
+
+				
+
+
+
+.text-white    
+
+
+
+						{
+
+
+
+						color: #ffffff;
+
+
+
+						}
+
+
+
+	
+
+
+
+.math-b					
+
+
+
+						{
+
+
+
+						font-style: normal;
+
+
+
+						}
+
+
+
+.math-c					
+
+
+
+						{
+
+
+
+						font-style: normal;
+
+
+
+						}
+
+
+
+						
+
+
+
+.symbol					{
+
+
+
+						font-style: normal;
+
+
+
+						}
+
+
+
+											
+
+
+
+/*--------------Text/Number/Sign superscripted/subscripted--------------*/	
+
+
+
+
+
+
+
+						
+
+
+
+span.text-sup      
+
+
+
+						{
+
+
+
+						vertical-align:top; 
+
+
+
+						font-size:0.9em;
+
+
+
+						margin-left:1px;
+
+
+
+						margin-right:1px; 
+
+
+
+						line-height:100%;
+
+
+
+						}
+
+
+
+
+
+
+
+span.text-sub      
+
+
+
+						{
+
+
+
+						vertical-align:bottom; 
+
+
+
+						font-size:0.9em;
+
+
+
+						margin-left:1px;
+
+
+
+						margin-right:1px; 
+
+
+
+						line-height:100%;
+
+
+
+						}
+
+
+
+text-sub,text-sup
+
+
+
+						{
+
+
+
+						line-height: 0.6em;
+
+
+
+						}
+
+
+
+						
+
+
+
+
+
+
+
+/*----------------------------------Linking extern within HTML Pages (intern)-----------------------*/	
+
+
+
+
+
+
+
+/*--------------Linking intern-------------*/
+
+
+
+
+
+
+
+/* unvisited link */						
+
+
+
+.inter-ref:link			{
+
+
+
+    					color:#4BC851;
+
+
+
+						text-decoration:none;
+
+
+
+						}
+
+
+
+
+
+
+
+/* visited link */
+
+
+
+.inter-ref:visited 	{
+
+
+
+    					color:#008000;
+
+
+
+						}
+
+
+
+
+
+
+
+/* mouse over link */
+
+
+
+.inter-ref:hover		{
+
+
+
+    					color:#B7C3D0;
+
+
+
+						}
+
+
+
+
+
+
+
+/* selected link 
+
+
+
+.inter-ref:active 		{
+
+
+
+    					color: #0000FF;
+
+
+
+						}*/
+
+
+
+						
+
+
+
+/*--------------Linking extern-------------*/
+
+
+
+						
+
+
+
+/* unvisited link */						
+
+
+
+.exter-ref:link			{
+
+
+
+    					color:#4971DD;
+
+
+
+						font-style:italic;
+
+
+
+						}
+
+
+
+
+
+
+
+/* visited link */
+
+
+
+.exter-ref:visited 		{
+
+
+
+    					color:#0345F7;
+
+
+
+						}
+
+
+
+
+
+
+
+/* mouse over link */
+
+
+
+.exter-ref:hover		{
+
+
+
+    					color:#0345F7;
+
+
+
+						}
+
+
+
+
+
+
+
+/* selected link 
+
+
+
+.exter-ref:active 		{
+
+
+
+    					color: #0000FF;
+
+
+
+						}*/
+
+
+
+						
+
+
+
+						
+
+
+
+/*--------------Table footnote link-------------*/	
+
+
+
+
+
+
+
+					
+
+
+
+.footnote-ref:link		{
+
+
+
+    					color:#8B8878;
+
+
+
+						font-style:italic;
+
+
+
+						font-size:16px;
+
+
+
+						}	
+
+
+
+						
+
+
+
+div.footnote-ref		{
+
+
+
+    					background: #EEE9BF;  /*or #f5f5f5 very light bg*/
+
+
+
+						border: 1px solid #FFF;
+
+
+
+						padding: 5px 2px 2px 2px;
+
+
+
+						margin: 10px 1px 13px 5px;
+
+
+
+						border-radius: 5px;
+
+
+
+						-moz-border-radius: 5px;
+
+
+
+						-webkit-border-radius: 5px;
+
+
+
+						box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+
+
+
+						}
+
+
+
+						
+
+
+
+
+
+
+/*---------Text blue----------*/
+
+
+
+.text-pink    
+
+
+						{
+
+
+
+						color:#823C46;
+
+
+
+						}	
+
+
+
+
+	
+
+
+
+/*---------normal Text black----------*/
+
+
+
+
+
+
+
+span.normal     
+
+
+
+						{
+
+
+
+						font-weight: normal;
+
+
+
+						color:#ffffff; 
+
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+
+/*---------normal Text blue----------*/
+
+
+
+
+
+
+
+.normal-blue     
+
+
+
+						{
+
+
+
+						font-weight: normal;
+
+
+
+						color:#0066b2; 
+
+
+
+						}						
+
+
+
+/*---------image width 100%----------*/
+
+
+
+
+
+
+
+img 
+
+
+
+						{
+
+
+
+						width: 100%
+
+
+
+						}	
+
+
+
+
+
+
+
+/*---------tr Border is Hidden----------*/
+
+
+
+
+
+
+
+tr.table-col-hidden     
+
+
+
+						{
+
+
+
+						background-color:#ffffff;
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						border: 0px solid #FFF;
+
+
+
+						}	
+
+
+
+
+
+
+
+tr.table-col-hidden-top     
+
+
+
+						{
+
+
+
+						background-color:#ffffff;
+
+
+
+						padding:5px 2px 5px 2px;
+
+
+
+						border-top: 0px solid #FFF;
+
+
+
+						}
+
+
+
+th 
+
+
+
+						{
+
+
+
+						vertical-align: top; 
+
+
+
+						}
+
+
+
+td
+
+
+
+						{
+
+
+
+						vertical-align: center; 
+
+
+
+						}
+
+
+
+td.table-col-center-align     
+
+
+
+						{
+
+
+
+						vertical-align: middle;
+
+
+
+						}
+
+
+
+
+/*-------------------------------Css for Glossary block starts-----------------------------------*/
+
+ 
+table.table-layout-b      {
+
+								 width: 100%;
+       						     table-layout:auto;
+        						 border-collapse:collapse;
+         						 margin:5px 0px 5px 1px;
+         				}
+ 
+ 
+ 
+/*--------------------td abbrevations---------------------*/
+ 
+td.abrevation
+                            {
+                            background-color:#ffffff;
+                            border-bottom:1px solid #bfbfbf;
+                            font-weight:normal;
+                            text-align:left;
+                            vertical-align:middle;
+                            padding: 2px 2px 2px 2px;
+                          }
+                                                                                             
+td.abrevation-bg
+                               {
+                               background-color:#CCC;
+                               font-weight:normal;
+                               text-align:left;
+                               vertical-align:middle;
+                               padding: 2px 2px 2px 2px;
+                               }
+
+
+				
+/*-------------------------------Css for Glossary block ends-----------------------------------*/
+
+
+			/*-------------------------------16 Oct 2015 new Tags-----------------------------------*/
+
+p.Modifier_2 {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+}
+p.Mechanism_2 {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+}
+p.Dosage_2 {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+	font-style: italic;
+}
+p.Group_2 {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+	font-weight: bold;
+}
+p.Drug_2  {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+	font-weight: bold;
+}
+p.Klasse_2  {
+	color: #3E3D40;
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 3px;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+p.list-star1:before 
+{ 
+						content: "*";				/*  25CF = 0.6em, thin bulltet: 2022 =0.45 em  */
+					   	margin-left:1.6em; 			/*  = |text-indent| minus width of Symbol (0.6)  */
+						margin-right:0.3em; 
+}
+				 
+p.list-star1        
+{
+						margin: 0px;						
+				       	text-indent:-2.3em;             /*  defined as -1.4em  */
+				       	margin-left:1.9em;
+
+						margin-bottom:0.0em;
+						margin-top:0.05em;
+							 color: #2e2d30;
+							/*font-size:11.0pt;*/
+							/*  = positive value of text-indent (-1.4em) + 0.3em extra before the symbol  */
+					
+}
+
+p.list-star2:before 
+{ 
+						content: "**";				/*  25CF = 0.6em, thin bulltet: 2022 =0.45 em  */
+					   	margin-left:1.2em; 			/*  = |text-indent| minus width of Symbol (0.6)  */
+						margin-right:0.3em; 
+}
+				 
+p.list-star2        
+{
+						margin: 0px;						
+				       	text-indent:-2.3em;             /*  defined as -1.4em  */
+				       	margin-left:1.9em;
+
+						margin-bottom:0.0em;
+						margin-top:0.05em;
+							 color: #2e2d30;
+							/*font-size:11.0pt;*/
+							/*  = positive value of text-indent (-1.4em) + 0.3em extra before the symbol  */
+					
+}
+
+
+p.list-star3:before 
+{ 
+						content: "***";				/*  25CF = 0.6em, thin bulltet: 2022 =0.45 em  */
+					   	margin-left:0.8em; 			/*  = |text-indent| minus width of Symbol (0.6)  */
+						margin-right:0.3em; 
+}
+				 
+p.list-star3        
+{
+						margin: 0px;						
+				       	text-indent:-2.3em;            /*  defined as -1.4em  */
+				       	margin-left:1.9em;
+
+						margin-bottom:0.0em;
+						margin-top:0.05em;
+							 color: #2e2d30;
+							/*font-size:11.0pt;*/
+							/*  = positive value of text-indent (-1.4em) + 0.3em extra before the symbol  */
+					
+}
+p.list-star4:before 
+{ 
+						content: "****";				/*  25CF = 0.6em, thin bulltet: 2022 =0.45 em  */
+					   	margin-left:0.4em; 			/*  = |text-indent| minus width of Symbol (0.6)  */
+						margin-right:0.3em; 
+}
+				 
+p.list-star4        
+{
+						margin: 0px;						
+				       	text-indent:-2.3em;            /*  defined as -1.4em  */
+				       	margin-left:1.9em;
+
+						margin-bottom:0.0em;
+						margin-top:0.05em;
+							 color: #2e2d30;
+							/*font-size:11.0pt;*/
+							/*  = positive value of text-indent (-1.4em) + 0.3em extra before the symbol  */
+					
+}
+p.list:before {
+	content: "";
+	margin-right: 0.8em;
+}
+
+p.list {
+	margin: 0px;
+	text-indent: -1.999em;
+	margin-left: 1.5em;
+	margin-bottom: 0.40em;
+	margin-top: 0.05em;
+	color: #2e2d30;
+}
+
+p.listlevel2_bullet:before  
+
+
+						{
+
+
+						content: "\2022";  
+
+
+						margin-right:0.4em;
+
+
+						}
+
+
+
+
+
+p.listlevel2_bullet        
+
+
+						{
+
+
+						margin: 0px;					
+
+
+				     	text-indent:-0.9em;             
+
+
+				       	margin-left:2.8em;
+
+
+						line-height:1.3em;
+
+
+						}
+
+
+
+
+
+
+/* -----------------list Level For TOC (1.1,1.2,1.3 etc)---------------        */
+
+
+p.list_toc:before 
+{ 
+						content: "";				
+					   	margin-right:0.8em; 			
+}
+				 
+p.list_toc       
+{
+						margin: 0px;						
+				       	text-indent:-2.55em;             
+				       	margin-left:1.8em;
+
+						margin-bottom:0.40em;
+						margin-top:0.05em;
+							 color: #2e2d30;
+							
+}
+
+
+
+/*-------------List level1 with Triangle Bullet-------------*/
+
+
+p.list_triangle:before
+
+
+						{ 
+
+
+						content: "\25BB";   
+
+
+						margin-right:0.4em;
+
+
+						color:#000000;  
+
+
+						}
+
+
+p.list_triangle
+
+
+						{ 
+
+
+						margin: 0px;     
+
+
+						text-indent:-0.99em;             
+
+
+						margin-left:1.4em;
+
+
+						
+
+
+						}
+
+/*--------- classes added by Gaurav 29 june 2016 ---------*/						
+	

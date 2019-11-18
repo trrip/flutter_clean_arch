@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width; initial-scale = 1; maximum-scale = 1.5; user-scalable = 0;" name="viewport">
+    <title>
+        Checklist
+    </title>
+    <link href="interactive_0000907.css" rel="stylesheet" type="text/css" />
+    <script src="interactive_0000907.js" type="text/javascript"></script>
+    <script src="jquery-1.9.1.min.js"></script>
+	 <script src="jquery-1.11.3.js"></script>
+ 
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+                /* if ($('#reference').css('display') == 'none')
+				  //$('#reference').css("display", "block");
+				  alert("yes");
+				  else
+				  $('#reference').css("display", "none");
+				  $("#reference").slideToggle("fast", function()
+			  {
+			  $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+			  });*/
+            });
+
+            /*$("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });*/
+        });
+    </script>
+</head>
+
+<body>
+    <table class="table1">
+        <colgroup>
+            <col width="40%">
+            <col width="60%">
+        </colgroup>
+        <tr style="border-bottom:0px;" class="no_border">
+            <td colspan="1" align="left" class="no_border" style="font-size:14px;"><b>Name der Patientin</b></td>
+            <td colspan="1" align="left" class="no_border" style="margin-left:10px;"><input type="text" style="width:90%;"/></td>
+        </tr>
+		 <tr style="border-bottom:0px;" class="no_border">
+            <td colspan="1" align="left" class="no_border" style="font-size:14px;"><b>Geburts&shy;datum</b></td>
+            <td colspan="1" align="left" class="no_border" style="margin-left:10px;"><input type="date" style="width:90%;-webkit-appearance: none;"/></td>
+        </tr>
+    </table>
+    <br/>
+    <table class="table">
+        <colgroup>
+            <col width="46%">
+            <col width="18%">
+            <col width="18%">
+            <col width="18%">
+        </colgroup>
+        <tr>
+            <th style="border-left:1px" colspan="1" class="table-header1" align="left">
+                <p class="table-title1">A. Patientin oder Patient und deren Eltern/&#8203;Ge&shy;schwis&shy;ter/&#8203;Kinder</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">ggf. An&shy;zahl<br/><span class="normal">(bitte an&shy;kreu&shy;zen)</span></p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Ge&shy;wich&shy;tung</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Er&shy;geb&shy;nis</p>
+            </th>
+        </tr>
+        <tr>
+            <th style="border-left:1px" colspan="4" class="table-header2" align="left">
+                <p class="table-title2">Auftreten</p>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="1">eines Mamma-Karzinoms bei der Patientin <b>vor</b> dem 36. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('1');" id="1" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" id="2" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="3" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">eines uni&shy;la&shy;te&shy;ralen Mamma-Karzinoms bei der Patientin <b>vor</b> dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('4');" id="4" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" id="5" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="6" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">eines bilateralen Mamma-Karzinoms bei der Patientin, das erste <b>vor</b> dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('7');" id="7" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" id="8" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="9" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">eines uni- oder bilateralen Mamma-Karzinoms bei der Patientin <b>nach</b> dem 50. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('10');" id="10" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" id="11" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="12" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">eines Ovarial-/&#8203;Tu&shy;benkar&shy;zi&shy;noms oder einer primären Peri&shy;to&shy;ne&shy;al&shy;kar&shy;zi&shy;no&shy;se bei der Patientin</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('13');" id="13" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" id="14" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="15" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">eines uni- oder bilateralen Mam&shy;ma&shy;kar&shy;zi&shy;noms bei einem Patienten (mnl.)</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('16');" id="16" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" id="17" class="center" readonly></input>
+            </td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" id="18" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei Schwes&shy;tern/&#8203;Töchtern/&#8203;Mutter/&#8203;Nichten <b>vor</b> dem 36. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('19');" id="19" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="20" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="21" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('22');" id="22" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('23');" id="23" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni&shy;la&shy;te&shy;ralen Mamma-Karzinoms bei Schwes&shy;tern/&#8203;Töchtern/&#8203;Mutter/&#8203;Nichten <b>vor</b> dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('24');" id="24" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="25" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="26" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('27');" id="27" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('28');" id="28" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines bilat. Mamma-Karzinoms bei Schwes&shy;tern/&#8203;Töchtern/&#8203;Mutter/&#8203;Nichten, das erste <b>vor</b> dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('29');" id="29" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="30" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="31" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('32');" id="32" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('33');" id="33" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni-oder bilat. Mamma-Karzinoms bei Schwes&shy;tern/&#8203;Töchtern/&#8203;Mutter/&#8203;Nichten <b>nach</b> dem 50. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('34');" id="34" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="1" id="35" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="36" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('37');" id="37" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('38');" id="38" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei Brüdern/&#8203;Söhnen/&#8203;Vater/&#8203;Neffen</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('39');" id="39" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="40" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="41" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('42');" id="42" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('43');" id="43" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Ovarial/&#8203;Tu&shy;benkar&shy;zi&shy;noms/&#8203;primären Peri&shy;to&shy;ne&shy;al&shy;kar&shy;zi&shy;no&shy;se bei Schwes&shy;tern/&#8203;Töchtern/&#8203;Mutter/&#8203;Nichten</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_A('44');" id="44" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="45" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="46" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_A('47');" id="47" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_A('48');" id="48" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <th class="table-header3" colspan="2" align="left">
+                <p class="table-title3">Summe Patientin und deren Eltern/&#8203;Ge&shy;schwis&shy;ter/&#8203;Kinder</p>
+            </th>
+
+            <td class="table-header3" colspan="2" align="center"><b>A</b> <input class="Result" type="text" id="A_Result" class="center" readonly></input>
+            </td>
+        </tr>
+    </table>
+    <table class="table">
+        <colgroup>
+            <col width="46%">
+            <col width="18%">
+            <col width="18%">
+            <col width="18%">
+        </colgroup>
+        <tr>
+            <th style="border-left:1px" colspan="1" class="table-header1" align="left">
+                <p class="table-title1">B. Weitere müt&shy;ter&shy;li&shy;che Linie</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">An&shy;zahl<br/><span class="normal">(bitte an&shy;kreu&shy;zen)</span></p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Ge&shy;wich&shy;tung</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Er&shy;geb&shy;nis</p>
+            </th>
+        </tr>
+        <tr>
+            <th style="border-left:1px" colspan="4" class="table-header2" align="left">
+                <p class="table-title2">Auftreten</p>
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen vor dem 36. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('49');" id="49" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="50" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="51" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('52');" id="52" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('53');" id="53" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni&shy;la&shy;te&shy;ralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen vor dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('54');" id="54" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="55" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="56" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('57');" id="57" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('58');" id="58" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines bilateralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen, das erste vor dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('59');" id="59" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="60" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="61" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('62');" id="62" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('63');" id="63" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni- oder bilateralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen nach dem 50. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('64');" id="64" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="1" id="65" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="66" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('67');" id="67" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('68');" id="68" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei einem an&shy;ge&shy;hö&shy;ri&shy;gen Mann</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('69');" id="69" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="70" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="71" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('72');" id="72" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('73');" id="73" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Ovarial-/&#8203;Tu&shy;benkar&shy;zi&shy;noms oder einer primären Peri&shy;to&shy;ne&shy;al&shy;kar&shy;zi&shy;no&shy;se bei einer An&shy;ge&shy;hö&shy;ri&shy;gen</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_B('74');" id="74" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="75" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="76" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_B('77');" id="77" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_B('78');" id="78" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <th class="table-header3" colspan="2" align="left">
+                <p class="table-title3">Summe weitere müt&shy;ter&shy;li&shy;che Linie</p>
+            </th>
+
+            <td class="table-header3" colspan="2" align="center"><b>B</b> <input class="Result" type="text" id="B_Result" class="center" readonly></input>
+            </td>
+        </tr>
+    </table>
+    <table class="table">
+        <colgroup>
+            <col width="46%">
+            <col width="18%">
+            <col width="18%">
+            <col width="18%">
+        </colgroup>
+        <tr>
+            <th style="border-left:1px" colspan="1" class="table-header1" align="left">
+                <p class="table-title1">C. weitere väterliche Linie</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">An&shy;zahl<br/><span class="normal">(bitte an&shy;kreu&shy;zen)</span></p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Ge&shy;wich&shy;tung</p>
+            </th>
+            <th colspan="1" class="table-header1" align="center">
+                <p class="table-title1">Er&shy;geb&shy;nis</p>
+            </th>
+        </tr>
+        <tr>
+            <th style="border-left:1px" colspan="4" class="table-header2" align="left">
+                <p class="table-title2">Auftreten</p>
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen vor dem 36. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('79');" id="79" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="80" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="81" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('82');" id="82" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('83');" id="83" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni&shy;la&shy;te&shy;ralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen vor dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('84');" id="84" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="85" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="86" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('87');" id="87" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('88');" id="88" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines bilateralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen, das erste vor dem 51. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('89');" id="89" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="3" id="90" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="91" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('92');" id="92" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('93');" id="93" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines uni- oder bilateralen Mamma-Karzinoms bei einer An&shy;ge&shy;hö&shy;ri&shy;gen nach dem 50. LJ</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('94');" id="94" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="1" id="95" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="96" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('97');" id="97" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('98');" id="98" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Mamma-Karzinoms bei einem an&shy;ge&shy;hö&shy;ri&shy;gen Mann</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('99');" id="99" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="70" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="101" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('102');" id="102" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('103');" id="103" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="1">eines Ovarial-/&#8203;Tu&shy;benkar&shy;zi&shy;noms oder einer primären Peri&shy;to&shy;ne&shy;al&shy;kar&shy;zi&shy;no&shy;se bei einer An&shy;ge&shy;hö&shy;ri&shy;gen</td>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="1" onclick="checBoxClicked_C('104');" id="104" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" value="2" id="105" class="center" readonly></input>
+            </td>
+            <td rowspan="3" colspan="1" align="center"><input type="text" class="Text_box" id="106" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="2" onclick="checBoxClicked_C('107');" id="107" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" onclick="checBoxClicked_C('108');" id="108" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <th class="table-header3" colspan="2" align="left">
+                <p class="table-title3">Summe weitere väterliche Linie</p>
+            </th>
+
+            <td class="table-header3" colspan="2" align="center"><b>C</b> <input class="Result" type="text" id="C_Result" class="center" readonly></input>
+            </td>
+        </tr>
+    </table>
+    <table class="table">
+        <colgroup>
+            <col width="46%">
+            <col width="18%">
+            <col width="18%">
+            <col width="18%">
+        </colgroup>
+        <tr>
+            <th class="table-header3" colspan="2" align="left">
+                <p class="table-title3">D. Der höhere Wert aus B und C</p>
+            </th>
+            <td class="table-header3" colspan="2" align="center"><b>D</b> <input class="Result" type="text" id="D_Result" class="center" readonly></input>
+            </td>
+        </tr>
+    </table>
+    <table class="table">
+        <colgroup>
+            <col width="46%">
+            <col width="18%">
+            <col width="18%">
+            <col width="18%">
+        </colgroup>
+        <tr>
+            <td class="table-header3" rowspan="8" colspan="1" align="left">
+                <p class="table-title3">E. Summe aus A und D = Risiko-Score</p>
+                </th>
+                <td class="col-green" colspan="1" align="center"><input type="text" class="Text_box" value="1" id="E1" class="center" readonly></td>
+                <td class="table-header3" rowspan="8" colspan="2" align="center"><b>A+D</b><br/><input class="Result" type="text" id="E_Result" class="center" readonly></input>
+                    </th>
+        </tr>
+        <tr>
+            <td class="col-green" colspan="1"><input type="text" class="Text_box" value="2" id="E2" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="3" id="E3" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="4" id="E4" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="5" id="E5" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="6" id="E6" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value="7" id="E7" class="center" readonly></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" align="center"><input type="text" class="Text_box" value=">7" id="E8" class="center" readonly></input>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <table class="footer-button-table">
+        <tr>
+            
+       <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="ref_button" style="outline:0">Fu&#223;noten</button></td>
+				<td class="footer-button" colspan="2" style="width: 50%;">
+        <button class="mfooter-button" id="pdfButton"><a href="flipView"><img id="algoPdf" src="algo_pdf.png" alt="Static version"></a></button>
+            
+        </tr>
+		<tr>
+		<td class="footer-button" colspan="2" style="width: 50%;">
+                <button class="mfooter-button" id="resetButton" onClick="window.location.reload();" style="outline:0">Rücksetzen</button></td>
+	   
+       <td class="footer-button" colspan="2" style="width: 50%;">
+        <a href="ref_DEAS5076_2.3.0.0.html"><button class="mfooter-button" id="moreInfoButton">Für weitere Details, klicken Sie hier</button></a></td>
+		</tr>
+
+        <tr><td colspan="4" style="border:0px;"><div class="reference-box" id="reference"><p class="text-left">Version: 06. Januar 2016 (C) Ärztekammer Westfalen-Lippe, Deutsche Krebsgesellschaft, Deutsche<br/>Gesellschaft für Senologie, Deutsches Konsortium für Erblichen Brust- und Eierstockkrebs<br/>Formulardesign ÄKWL, Hübers, Version 2.1</p>
+	   </div></td></tr>
+    </table>
+    <br/>
+
+</body>
+
+</html>
